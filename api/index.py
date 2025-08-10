@@ -7,7 +7,9 @@ app = Flask(__name__)
 CORS(app)
 
 model = joblib.load('heart_disease_model.pkl')
-
+@app.route('/')
+def home():
+    return jsonify({"message": "API is running"})
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.json
