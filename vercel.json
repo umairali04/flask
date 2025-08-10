@@ -4,11 +4,3 @@
   ]
 }
 
-{
-  "functions": {
-    "api/index.py": {
-      "runtime": "python3.9"
-    }
-  },
-  "includeFiles": "api/heart_disease_model.pkl"
-}
