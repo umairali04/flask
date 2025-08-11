@@ -1,6 +1,1 @@
 Flask==3.0.3
-flask
-flask-cors
-joblib
-numpy
-scikit-learn
