@@ -1,6 +1,6 @@
 import pandas as pd
 #import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 dataset = pd.read_csv("heart_disease_data.csv")
 
@@ -33,11 +33,11 @@ comparison_df = pd.DataFrame({
 pd.set_option('display.max_rows', None)
 print(comparison_df)
 
-plt.figure(figsize=(8,7))
-plt.plot(y_test.values, label='Actual value', marker='o')
-plt.plot(y_prediction, label='Prediction', marker='p')
-plt.title('Actual and Predicited heart disease')
-plt.show()
+#plt.figure(figsize=(8,7))
+#plt.plot(y_test.values, label='Actual value', marker='o')
+#plt.plot(y_prediction, label='Prediction', marker='p')
+#plt.title('Actual and Predicited heart disease')
+#plt.show()
 
 from sklearn.metrics import confusion_matrix, classification_report
 
@@ -49,5 +49,6 @@ print(classification_report(y_test, y_prediction, target_names=["No Heart Diseas
 
 import joblib
 joblib.dump(model, 'heart_disease_model.pkl', compress=3)
+
 
 
