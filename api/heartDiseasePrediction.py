@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+#import numpy as np
 import matplotlib.pyplot as plt
 
 dataset = pd.read_csv("heart_disease_data.csv")
@@ -49,4 +49,5 @@ print(classification_report(y_test, y_prediction, target_names=["No Heart Diseas
 
 import joblib
 joblib.dump(model, 'heart_disease_model.pkl', compress=3)
+
 
