@@ -48,4 +48,5 @@ print("\nClassification Report:")
 print(classification_report(y_test, y_prediction, target_names=["No Heart Disease", "Heart Disease"]))
 
 import joblib
-joblib.dump(model, 'heart_disease_model.pkl')
+joblib.dump(model, 'heart_disease_model.pkl', compress=3)
+
